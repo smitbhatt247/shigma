@@ -1,0 +1,9 @@
+body
+{
+    background-color: rgb(28, 231, 32);
+}
+
+td{
+    border: 7px solid black ;
+    border-color: rgb(219, 23, 222);
+}
