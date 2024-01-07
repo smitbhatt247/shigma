@@ -3,7 +3,11 @@ body
     background-color: rgb(28, 231, 32);
 }
 
-td{
-    border: 7px solid black ;
-    border-color: rgb(219, 23, 222);
+.main_table td{
+    border: 4px solid black ;
+    border-color: rgb(21, 20, 21);
+}
+
+.temp td{
+    border: none;
 }
