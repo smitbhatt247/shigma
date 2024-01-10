@@ -11,9 +11,17 @@
         <!-- cell padding is safe kept distance between border and contents -->
         <!-- cell spacing is difference between borders -->
         <tr>
-            <td> <img height="230" src="hairy.jpg" alt="No Image Found "></td>
-            <td valign="top" >Hello I am Hairy, I am very Hairy <br><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos omnis explicabo illo, ea assumenda obcaecati nobis. Aut temporibus fuga soluta cupiditate hic iste, consectetur totam nostrum consequatur ut. Totam voluptatem at, ab vero ipsam deserunt qui. Hic iste vel magni natus vitae dignissimos deserunt, nesciunt inventore nobis. Culpa atque id sed porro nostrum quibusdam mollitia in, nihil possimus praesentium ad vero odit quas repudiandae reiciendis, harum modi sunt deserunt!</td>
-           
+            <!-- here if i do td width = "50%"  it means 50% of the user screen-->
+            <!-- in the image if i do width = "100%" it means 100% of that td-->
+            <td width="50%"> <img width="100%" height="239" src="hairy.jpg" alt="No Image Found "></td>
+            <!-- if i write td width = 50% it would mean 50% width of tr -->
+            <!-- image width 100% but after taking into account cell padding  -->
+            <td  valign="top" >Hello I am Hairy, I am very Hairy <br><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos omnis explicabo illo, ea assumenda obcaecati nobis. Aut temporibus fuga soluta cupiditate hic iste, consectetur totam nostrum consequatur ut. Totam voluptatem at, ab vero ipsam deserunt qui. Hic iste vel magni natus vitae dignissimos deserunt, nesciunt inventore nobis. Culpa atque id sed porro nostrum quibusdam mollitia in, nihil possimus praesentium ad vero odit quas repudiandae reiciendis, harum modi sunt deserunt!</td>
+            
+            <!-- see the addition of both the trs should add up to 100% no matter what if you do it in percentage and not specify in absolute values ( pixels ) -->
+            <!-- if you do specify it then if not all are specified then say you did 30% then that will become 30%  -->
+            <!-- if you specified wrong say they don't add up to 100% then they will just divide themselves in ratio of percentage -->
+            <!--  this all bs is only if you specify in percentages -->
             
         </tr>
         <tr>
@@ -41,13 +49,13 @@
 </tr>
         <tr>
            
-            <td align="center" width = "50%">
+            <td align="center">
                 <table class="temp">
                 <tr><td>Sex </td><td>⭐⭐⭐⭐⭐</td></tr>
                 <tr><td>Being Hairy</td><td>⭐⭐⭐⭐⭐</td></tr>
             </table>
         </td>
-        <td align="center" width="50%">
+        <td align="center">
             <table class="temp">
                 <tr >
                     <td>HTML</td> <td>⭐</td>
@@ -63,7 +71,19 @@
         </td>
 
     </tr> 
+       <tr>
+        <td >I Know How To Create Nested Tables
+            <table>
+                <tr>
+                    <td>hi</td><td>bye</td>
+                </tr>
+                <tr>
+                    <td>bye</td><td>hi</td>
+                </tr>
+            </table> 
+        </td>
        
+       </tr>
     </table>
    
 </body>
