@@ -7,11 +7,17 @@
 </head>
 <body>
      <!--get is a simple request and post is used in most cases where we want data and all  -->
-    <form action="post">
+
+         <form action="submit.html" enctype="text/plain">
+            <!-- enctype to avoid funny things in mail (similar to meta charset = UTF-8) just do it brah -->
+        <!-- write method = "post" so the data gets posted-->
+        <!-- <form action="mailto:smitbhatt247@gmail.com" method="post"> -->
+        <!-- here datas will be posted according to 'name' for example it will post YourName : smit bhatt -->
         <h1>Form To Apply For Gisi Leader</h1>
         <hr>
+        <!-- Do the label for thing in username because when you click on Telegram id: then it will start taking input  -->
         <label for="username">Telegram id :</label>
-        <input type="text" name="username" placeholder="Enter Your Telegram id 😳" id="username">
+          <input type="text" name="YourName" placeholder="Enter Your Telegram id 😳" id="username">
         <!-- input:text then write placeholder -->
         <!-- ids are like aadhar, unique for every element-->
         <hr>
@@ -25,26 +31,39 @@
         <label for="femb">Femboy</label>
         <input type="radio" name="gender" id="gend">
         <label for="gend">Not A Member Of Gisi</label>
-        <!-- same name forbids the user from picking both the radio buttons at once -->
+        <!-- use labels becase uspe click krne se radio select ho jayega-->
+        <!-- same 'name' forbids the user from picking both the radio buttons at once -->
         <hr>
         Enter your email : <input type="email" name="" id="" placeholder="Enter Your Email nigga">
+
         <hr>
         Enter your Birth Day : <input type="date" name="" id="">
+
+        <hr>
+        Your Message :
+        <br>
+        <textarea name="" id="" cols="30" rows="4"></textarea>
+        <!-- using the bottom right corner you can adjust size of text area -->
+
         <hr>
         Upload Your Resume : <input type="file" name="" id="">
+
         <hr>
         <label for="">Enter Your Telegram Password : </label>
             <input type="password" name="" id="" placeholder="Enter Tele Password 😈">
+
         <hr>
             How Satisfied Are You With Smit's Leadership
             <br>
             <label for="">0</label> <input type="range" name=""  min="0" max="100" step="10"><label for="">100</label>
+
         <hr>
         Smit Bhatt is the smartest person alive
         <br>
         Do you agree with the above statement?<br>  <input type="checkbox" name="" id="agree"><label for="agree">Yes</label>
         <!-- because we labelled yes to the checkbox now even if you click on "Yes", checkbox will get checked -->
-        <br><hr>
+        <br>
+        <hr>
         <input type="reset" value="Clear Response">
         <input type="submit" value="Apply">
 
